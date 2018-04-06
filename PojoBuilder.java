@@ -250,7 +250,7 @@ public class PojoBuilder
 					  stringBuffer.append(" \t\t \t\t <column name=\""+pojoColumnBean.getColumnName()+"\" /> \n");
 					  stringBuffer.append("\t\t </many-to-one> \n");
 				  } 
-				  else if(pojoDefinitionBean.isReverseAssociation()  && pojoColumnBean.getReversedClassName()!=null)
+				  else if(pojoColumnBean.getReversedClassName()!=null)
 				  {
 						String className =  pojoColumnBean.getReversedClassName();
 						String columnName =  pojoColumnBean.getReversedColumnName();
